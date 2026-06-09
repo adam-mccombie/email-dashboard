@@ -144,7 +144,13 @@ input:checked+.tslider:before{transform:translateX(16px)}
   </div>
   <div style="margin-bottom:18px"></div>
   <!-- Scatter -->
-  <div class="chart-card"><div class="chart-title">Send Size vs. Open Rate <span>(sends with 2,000+ recipients)</span></div><canvas id="ch-scatter" height="130"></canvas></div>
+  <div class="chart-card" id="top5-card">
+    <div class="chart-title">Top 5 Sends by Revenue <span id="top5-period"></span></div>
+    <div class="table-wrap" style="margin:0"><table id="top5-table">
+      <thead><tr><th>#</th><th>Campaign</th><th>Type</th><th>Date</th><th>Recipients</th><th>Open Rate</th><th>Revenue</th><th>Link</th></tr></thead>
+      <tbody id="top5-body"></tbody>
+    </table></div>
+  </div>
 </div>
 
 <!-- BY TYPE -->
